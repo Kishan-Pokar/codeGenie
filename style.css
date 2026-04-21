@@ -1,0 +1,144 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+form {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+form:hover {
+    transform: scale(1.03);
+}
+
+textarea {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    resize: vertical;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+textarea:focus {
+    box-shadow: 0 0 10px rgba(30, 60, 114, 0.8);
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #ff512f, #dd2476);
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.4s ease, transform 0.2s ease;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(135deg, #dd2476, #ff512f);
+    transform: translateY(-3px);
+}
+
+input[type="submit"]:active {
+    transform: translateY(1px);
+}
+
+label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+
+#result {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+}
+
+pre {
+    background: #1e1e1e;
+    color: #f8f8f2;
+    padding: 15px;
+    border-radius: 10px;
+    overflow-x: auto;
+    font-family: 'Courier New', monospace;
+    line-height: 1.5;
+}
+
+h2 {
+    color: #ffc107;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+/* Scrollable Box Styles */
+.scroll-box {
+    background: #1e1e1e;
+    color: #f8f8f2;
+    padding: 15px;
+    border-radius: 10px;
+    max-height: 300px; 
+    max-width: 1000px;  /* Max height before scrolling starts */
+    overflow-y: auto;    /* Enables vertical scrolling */
+    overflow-x: auto;    /* Enables horizontal scrolling if needed */
+    font-family: 'Courier New', monospace;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Scrollbar Styling */
+.scroll-box::-webkit-scrollbar {
+    width: 8px;
+}
+
+.scroll-box::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.scroll-box::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #6a82fb, #fc5c7d);
+    border-radius: 10px;
+}
+
+.scroll-box::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #fc5c7d, #6a82fb);
+}
